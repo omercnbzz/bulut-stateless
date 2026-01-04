@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stateless Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stateless Analyzer</h1>
+            <p>Verileriniz asla sunucuya kaydedilmez.</p>
+        </header>
+        
+        <main>
+            <textarea id="textInput" placeholder="Analiz edilecek metni buraya yapıştırın..."></textarea>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Karakter</span>
+                    <span id="charCount" class="value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Kelime</span>
+                    <span id="wordCount" class="value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Okuma Süresi</span>
+                    <span id="readTime" class="value">0 dk</span>
+                </div>
+            </div>
+            
+            <button id="clearBtn">Temizle</button>
+        </main>
+
+        <footer>
+            <p>Docker & Nginx ile Stateless Mimari Demo</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
